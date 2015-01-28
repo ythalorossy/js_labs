@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script src="closures.js"></script>
+        <script>
+            // 1
+            var fullName = showName("Ythalo", "Rossy");
+            console.log(fullName);
+            
+            // 2
+            // At this juncture, the celebrityName outer function has returned.
+            var mjName = celebrityName ("Michael"); 
+
+            // The closure (lastName) is called here after the outer function has returned above
+            // Yet, the closure still has access to the outer function's variables and parameter
+            mjName ("Jackson"); // This celebrity is Michael Jackson
+            
+        </script>
+    </body>
+</html>
